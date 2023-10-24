@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box three with sticky</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 1300px;
+    }
+
+    div>span {
+      width: 200px;
+      height: 100px;
+      background-color: red;
+      margin: 1em;
+    }
+
+    div>span:nth-child(4) {
+      position: sticky;
+      top: 100px;
+    }
+
+    label {
+      position: fixed;
+      width: 100%;
+      height: 30px;
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <label></label>
+    <span style="background-color: red;">gay</span>
+    <span style="background-color: green;">gakiza</span>
+    <span style="background-color: yellow;">divin</span>
+    <span style="background-color: black; color: white;"></span>
+    <span style="background-color: blue;"></span>
+  </div>
+</body>
+
+</html>

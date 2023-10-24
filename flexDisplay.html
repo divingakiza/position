@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox display</title>
+  <style>
+    .ddd {
+      display: flex;
+      flex-direction: row;
+      height: 100px;
+    }
+
+    .ttt {
+      background-color: lightpink;
+      width: 100px;
+      border: 2px black solid;
+      border-inline: 20px solid red;
+    }
+
+    .tty {
+      background-color: lightblue;
+      width: 200px;
+    }
+
+    .tyy {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .yyy {
+      background-color: black;
+      color: white;
+    }
+
+    .ytt {
+      background-color: black;
+      color: white;
+    }
+
+    .yty {
+      margin-top: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ddd">
+    <div class="ttt"></div>
+    <div class="tty">
+      <div class="yty">row1</div>
+      <div class="tyy">
+        <div class="yyy">row2</div>
+        <div class="ytt">row2</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

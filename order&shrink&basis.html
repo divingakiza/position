@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex width order and flex-shrink</title>
+  <style>
+    div {
+      display: flex;
+      align-items: end;
+      flex-wrap: nowrap;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      flex-direction: row;
+    }
+
+    div>span {
+      display: flex;
+      width: 130px;
+      background-color: red;
+      margin: 1em;
+      flex-shrink: 0;
+    }
+
+    div>span:nth-child(1) {
+      min-height: 50px;
+      flex: 1;
+      flex-basis: 0;
+      order: 3;
+    }
+
+    div>span:nth-child(2) {
+      min-height: 100px;
+      order: 5;
+    }
+
+    div>span:nth-child(3) {
+      min-height: 150px;
+      align-self: flex-end;
+      order: 4;
+    }
+
+    div>span:nth-child(4) {
+      min-height: 200px;
+      order: 6;
+    }
+
+    div>span:nth-child(5) {
+      min-height: 250px;
+      order: 2;
+    }
+
+    div>span:nth-child(6) {
+      min-height: 300px;
+      order: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>
+  </div>
+</body>
+
+</html>
